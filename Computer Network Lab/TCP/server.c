@@ -33,6 +33,7 @@ int main()
     if(k==-1)
     printf("Error in receiving");
     printf("Message got from client is : %s",buf);
-    close(temp_sock_desc);
+    shutdown(sock_desc,2);
+	shutdown(temp_sock_desc,2);
     return 0;
 }
