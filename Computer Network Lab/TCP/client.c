@@ -23,6 +23,6 @@ int main()
     k=send(sock_desc,buf,100,0);
     if(k==-1)
     printf("Error in sending");
-    close(sock_desc);
+    shutdown(sock_desc,2);
     return 0;
 }
