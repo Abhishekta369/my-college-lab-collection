@@ -4,6 +4,8 @@
 #include<sys/socket.h>
 #include<netinet/in.h>
 #include<unistd.h>
+#include<string.h>
+
 int main()
 {
 FILE *fp;
